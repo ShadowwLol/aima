@@ -39,7 +39,7 @@ void grab_input(char * input, size_t size){
   size_t j = 0;
   for (size_t i = 0; tmp[i] != '\0'; ++i){
     if (isalnum(tmp[i])){
-      input[j] = tmp[i];
+      input[j] = tolower(tmp[i]);
       ++j;
     }
   }
